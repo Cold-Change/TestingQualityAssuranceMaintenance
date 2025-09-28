@@ -11,7 +11,7 @@ jobs:
           command: pip install pytest
       - run:
           name: "Test Triangle Classification"
-          command: "pytest testing_triangle_classification.py"
+          command: "pytest ClassifyTriangle/testing_triangle_classification.py"
 
 workflows:
   test_triangle_classification-workflow:

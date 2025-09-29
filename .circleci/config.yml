@@ -28,9 +28,9 @@ jobs:
           command: "pytest GitHubAPI/testing_github_api.py"
 
 workflows:
-  test_triangle_classification-workflow:
+  test_triangle_classification_workflow:
     jobs:
       - test_triangle_classification
-  github-api-workflow:
+  github_api_workflow:
     jobs:
       - test_github_api

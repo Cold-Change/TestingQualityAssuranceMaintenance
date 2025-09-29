@@ -21,6 +21,9 @@ jobs:
           name: Install pytest
           command: pip install pytest
       - run:
+          name: Install requests import
+          command: pip install requests
+      - run:
           name: "Test GitHub API"
           command: "pytest GitHubAPI/github_api.py"
 

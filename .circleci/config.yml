@@ -12,7 +12,7 @@ jobs:
       - run:
           name: "Test Triangle Classification"
           command: "pytest ClassifyTriangle/testing_triangle_classification.py"
-  test-github-api:
+  test_github_api:
     docker:
       - image: cimg/python:3.7.12
     steps:
@@ -33,4 +33,4 @@ workflows:
       - test_triangle_classification
   github-api-workflow:
     jobs:
-      - test-github-api
+      - test_github_api

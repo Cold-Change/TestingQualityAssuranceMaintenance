@@ -25,7 +25,7 @@ jobs:
           command: pip install requests
       - run:
           name: "Test GitHub API"
-          command: "pytest GitHubAPI/github_api.py"
+          command: "pytest GitHubAPI/testing_github_api.py"
 
 workflows:
   test_triangle_classification-workflow:

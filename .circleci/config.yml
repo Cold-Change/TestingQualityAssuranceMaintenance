@@ -12,8 +12,22 @@ jobs:
       - run:
           name: "Test Triangle Classification"
           command: "pytest ClassifyTriangle/testing_triangle_classification.py"
+  test-github-api:
+    docker:
+      - image: cimg/python:3.7.12
+    steps:
+      - checkout
+      - run:
+          name: Install pytest
+          command: pip install pytest
+      - run:
+          name: "Test GitHub API"
+          command: "pytest GitHubAPI/github_api.py"
 
 workflows:
   test_triangle_classification-workflow:
     jobs:
       - test_triangle_classification
+  github-api-workflow:
+    jobs:
+      - test-github-api

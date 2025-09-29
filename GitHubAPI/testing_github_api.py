@@ -45,8 +45,8 @@ def test_github_api():
             if name == "Project1": assert commits == 2
             if name == "try_nbdev": assert commits == 2
             if name == "helloworld": assert commits == 6
-        else:
-            print(f"Failed to retrieve data.")
+    else:
+        print(f"Failed to retrieve data.")
 
 if __name__ == "__main__":
     main()
